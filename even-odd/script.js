@@ -19,4 +19,4 @@ function getRndInteger(min, max) {
   }
 
     // Invoke getRndInteger
-    getRndInteger(1, 5)
+    const userNumberValue = getRndInteger(1, 5);
