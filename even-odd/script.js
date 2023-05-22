@@ -8,7 +8,7 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (u
 Dichiariamo chi ha vinto.
 */
 
-let isEvenOrOdd = prompt("Inserisci 'pari' o 'dispari':");
+let isEvenOrOdd = prompt("Seleziona 'pari' o 'dispari':");
 
 while (isEvenOrOdd.toLowerCase() !== "pari" && isEvenOrOdd.toLowerCase() !== "dispari") {
     isEvenOrOdd = prompt("Perfavore inserisci se vuoi scegliere 'pari' o 'dispari'.");
