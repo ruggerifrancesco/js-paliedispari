@@ -39,6 +39,15 @@ function getRndInteger(min, max) {
     console.log("Numero PC", pcRndNumber);
 
 
-// Sum of the numbers
+// Sum of the numbers (and Check is the result is Even or Odd)
 let sumNumbers = userNumber + pcRndNumber;
-console.log("Somma", sumNumbers);
+console.log(sumEvenOrOdd(sumNumbers));
+
+// If the sum is even or Odd => Function
+function sumEvenOrOdd (sumNumbersEvenOrOdd) {
+    if (sumNumbersEvenOrOdd % 2 === 0) {
+        return `Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e pari!`;
+    } else {
+        return `Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e dispari!`;
+    }
+}
