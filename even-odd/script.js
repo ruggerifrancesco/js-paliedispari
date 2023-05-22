@@ -8,19 +8,19 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (u
 Dichiariamo chi ha vinto.
 */
 
-let isEvenOrOdd = prompt("Please enter 'even' or 'odd':");
+let isEvenOrOdd = prompt("Inserisci 'pari' o 'dispari':");
 
-while (isEvenOrOdd.toLowerCase() !== "even" && isEvenOrOdd.toLowerCase() !== "odd") {
-    isEvenOrOdd = prompt("Invalid input. Please enter 'even' or 'odd':");
+while (isEvenOrOdd.toLowerCase() !== "pari" && isEvenOrOdd.toLowerCase() !== "dispari") {
+    isEvenOrOdd = prompt("Perfavore inserisci se vuoi scegliere 'pari' o 'dispari'.");
 }
 
 // At this point, the user has entered either 'even' or 'odd'
-if (isEvenOrOdd.toLowerCase() === "even") {
+if (isEvenOrOdd.toLowerCase() === "pari") {
   // Do something for even
-  console.log("You selected even.");
+  console.log("Hai selezionato Pari.");
 } else {
   // Do something for odd
-  console.log("You selected odd.");
+  console.log("Hai selezionato Dispari.");
 }
 
 // Check if UserNumber is between 1 and 5
