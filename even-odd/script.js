@@ -68,7 +68,15 @@ function sumEvenOrOdd (sumNumbersEvenOrOdd, hasWin) {
             console.log('Hai perso!');
         }
     } else {
-        return `Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e dispari!`;
+        console.log(`Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e dispari!`);
+
+        // Check if the user as selected odd and tells win or loss
+        if (isEvenOrOdd.toLowerCase() === "dispari") {
+            console.log('Hai vinto!');
+        } else {
+            console.log('Hai perso!');
+        }
+        
     }
 }
 
