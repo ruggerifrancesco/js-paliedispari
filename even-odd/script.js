@@ -57,12 +57,18 @@ let sumNumbers = userNumber + pcRndNumber;
 console.log(sumEvenOrOdd(sumNumbers));
 
 // If the sum is even or Odd => Function
-function sumEvenOrOdd (sumNumbersEvenOrOdd) {
+function sumEvenOrOdd (sumNumbersEvenOrOdd, hasWin) {
     if (sumNumbersEvenOrOdd % 2 === 0) {
-        return `Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e pari!`;
+        console.log(`Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e pari!`);
+        if (isEvenOrOdd.toLowerCase() === "pari") {
+            console.log('Hai vinto!');
+        } else {
+            console.log('Hai perso!');
+        }
     } else {
         return `Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e dispari!`;
     }
 }
+
 
 
