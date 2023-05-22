@@ -16,7 +16,7 @@ let userNumber;
 let guesses = 1;
 
 while (!isInRange) {
-    userNumber = parseInt(prompt(guesses + " Scegli un numero da 1 a 5!"));
+    userNumber = parseInt(prompt(guesses, "Scegli un numero da 1 a 5!"));
 
     if (userNumber >= 1 && userNumber <= 5) {
         isInRange = true;
@@ -51,3 +51,5 @@ function sumEvenOrOdd (sumNumbersEvenOrOdd) {
         return `Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e dispari!`;
     }
 }
+
+
