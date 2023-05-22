@@ -60,16 +60,17 @@ console.log(sumEvenOrOdd(sumNumbers, isEvenOrOdd));
 function sumEvenOrOdd(sumNumbersEvenOrOdd, isEvenOrOdd) {
     if (sumNumbersEvenOrOdd % 2 === 0) {
         console.log(`Somma dei numeri è ${sumNumbersEvenOrOdd}: il numero è pari!`);
-        return hasWinCheck(isEvenOrOdd);
     } else {
         console.log(`Somma dei numeri è ${sumNumbersEvenOrOdd}: il numero è dispari!`);
-        return hasWinCheck(isEvenOrOdd);
     }
+
+    return hasWinCheck(isEvenOrOdd, sumNumbersEvenOrOdd);
 }
 
 // Function to check if the user wins
-function hasWinCheck(isEvenOrOdd) {
-    if (isEvenOrOdd.toLowerCase() === "pari") {
+function hasWinCheck(isEvenOrOdd, sumNumbersEvenOrOdd) {
+    if ((isEvenOrOdd.toLowerCase() === "pari" && sumNumbersEvenOrOdd % 2 === 0) ||
+        (isEvenOrOdd.toLowerCase() === "dispari" && sumNumbersEvenOrOdd % 2 !== 0)) {
         return "Hai vinto!";
     } else {
         return "Hai perso!";
