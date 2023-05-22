@@ -17,7 +17,7 @@ function ifWordPalindrome(str) {
     for (let i = 0; i < wordLength / 2; i++) {  
         // Validate the first and last characters are the same  
         if (str[i] !== str[wordLength - 1 - i]) {  
-          console.log(`La parola ${userInput} non e palindroma!`)
+          console.error(`La parola ${userInput} non e palindroma!`)
           return 0;
         }  
     }  
