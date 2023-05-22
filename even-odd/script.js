@@ -8,12 +8,25 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (u
 Dichiariamo chi ha vinto.
 */
 
-const isEvenOrOdd = prompt("Scegli tra Pari o Dispari");
-const userNumber = parseInt(prompt("Scegli un numero da 1 a 5!"));
+// const isEvenOrOdd = prompt("Scegli tra Pari o Dispari");
 
-// ----> Functions
+// Check if UserNumber is between 1 and 5\
+let isInRange = false;
 
-// Random Number for PC
+while (!isInRange) {
+    const userNumber = parseInt(prompt("Scegli un numero da 1 a 5!"));
+
+    if (userNumber >= 1 && userNumber <= 5 || isNaN(userNumber)) {
+        isInRange = true;
+    } else {
+        alert('Hai Sbgaliato, il numero deve essere tra 1 e 5');
+    }
+
+    console.log(userNumber);
+}
+
+
+// Random Number for PC => Function
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
