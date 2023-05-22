@@ -60,6 +60,8 @@ console.log(sumEvenOrOdd(sumNumbers));
 function sumEvenOrOdd (sumNumbersEvenOrOdd, hasWin) {
     if (sumNumbersEvenOrOdd % 2 === 0) {
         console.log(`Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e pari!`);
+
+        // Check if the user as selected even and tells win or loss
         if (isEvenOrOdd.toLowerCase() === "pari") {
             console.log('Hai vinto!');
         } else {
