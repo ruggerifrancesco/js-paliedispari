@@ -49,36 +49,29 @@ function getRndInteger(min, max) {
 
     // Invoke getRndInteger
     const pcRndNumber = getRndInteger(1, 5);
-    console.log("Numero PC", pcRndNumber);
+    console.log("Numero PC:", pcRndNumber);
 
 
 // Sum of the numbers (and Check is the result is Even or Odd)
 let sumNumbers = userNumber + pcRndNumber;
-console.log(sumEvenOrOdd(sumNumbers));
+console.log(sumEvenOrOdd(sumNumbers, isEvenOrOdd));
 
 // If the sum is even or Odd => Function
-function sumEvenOrOdd (sumNumbersEvenOrOdd, hasWin) {
+function sumEvenOrOdd(sumNumbersEvenOrOdd, isEvenOrOdd) {
     if (sumNumbersEvenOrOdd % 2 === 0) {
-        console.log(`Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e pari!`);
-
-        // Check if the user as selected even and tells win or loss
-        if (isEvenOrOdd.toLowerCase() === "pari") {
-            console.log('Hai vinto!');
-        } else {
-            console.log('Hai perso!');
-        }
+        console.log(`Somma dei numeri è ${sumNumbersEvenOrOdd}: il numero è pari!`);
+        return hasWinCheck(isEvenOrOdd);
     } else {
-        console.log(`Somma dei numeri e ${sumNumbersEvenOrOdd}: il numero e dispari!`);
-
-        // Check if the user as selected odd and tells win or loss
-        if (isEvenOrOdd.toLowerCase() === "dispari") {
-            console.log('Hai vinto!');
-        } else {
-            console.log('Hai perso!');
-        }
-        
+        console.log(`Somma dei numeri è ${sumNumbersEvenOrOdd}: il numero è dispari!`);
+        return hasWinCheck(isEvenOrOdd);
     }
 }
 
-
-
+// Function to check if the user wins
+function hasWinCheck(isEvenOrOdd) {
+    if (isEvenOrOdd.toLowerCase() === "pari") {
+        return "Hai vinto!";
+    } else {
+        return "Hai perso!";
+    }
+}
