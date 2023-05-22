@@ -13,10 +13,10 @@ const userNumber = parseInt(prompt("Scegli un numero da 1 a 5!"));
 
 // ----> Functions
 
-// Random Number
+// Random Number for PC
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
 
     // Invoke getRndInteger
-    const userNumberValue = getRndInteger(1, 5);
+    const pcRndNumber = getRndInteger(1, 5);
