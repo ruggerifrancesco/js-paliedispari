@@ -26,7 +26,7 @@ if (isEvenOrOdd.toLowerCase() === "pari") {
 // Check if UserNumber is between 1 and 5
 let isInRange = false;
 let userNumber;
-let guesses = 1;
+let attempt = 1;
 
 while (!isInRange) {
     userNumber = parseInt(prompt("Tentativo: " + guesses + " | Scegli un numero da 1 a 5!"));
@@ -39,7 +39,7 @@ while (!isInRange) {
         alert('Hai Sbagliato, il numero deve essere tra 1 e 5');
     }
 
-    guesses++
+    attempt++
 }
 
 // Random Number for PC => Function
