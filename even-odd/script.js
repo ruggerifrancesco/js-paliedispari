@@ -11,7 +11,7 @@ Dichiariamo chi ha vinto.
 let isEvenOrOdd = prompt("Seleziona 'pari' o 'dispari':");
 
 while (isEvenOrOdd.toLowerCase() !== "pari" && isEvenOrOdd.toLowerCase() !== "dispari") {
-    isEvenOrOdd = prompt("Perfavore inserisci se vuoi scegliere 'pari' o 'dispari'.");
+    isEvenOrOdd = prompt("Perfavore scegli se vuoi giocare 'pari' o 'dispari'.");
 }
 
 // At this point, the user has entered either 'even' or 'odd'
