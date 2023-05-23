@@ -29,7 +29,7 @@ let userNumber;
 let attempt = 1;
 
 while (!isInRange) {
-    userNumber = parseInt(prompt("Tentativo: " + guesses + " | Scegli un numero da 1 a 5!"));
+    userNumber = parseInt(prompt("Tentativo: " + attempt + " | Scegli un numero da 1 a 5!"));
 
     if (userNumber >= 1 && userNumber <= 5) {
         isInRange = true;
