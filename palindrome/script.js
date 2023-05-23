@@ -6,7 +6,7 @@ Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 */
 
-const userInput = prompt('Entra una parrola e scopri se e palindroma!');
+const userInput = prompt('Entra una parola e scopri se e palindroma!');
 
 console.log(ifWordPalindrome(userInput));  
 
