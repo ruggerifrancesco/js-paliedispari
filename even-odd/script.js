@@ -54,7 +54,7 @@ function getRndInteger(min, max) {
 
 // Sum of the numbers (and Check is the result is Even or Odd)
 let sumNumbers = userNumber + pcRndNumber;
-console.log(sumEvenOrOdd(sumNumbers, isEvenOrOdd));
+console.log(sumEvenOrOdd(sumNumbers, isEvenOrOdd)); //per riccardo
 
 // If the sum is even or Odd => Function
 function sumEvenOrOdd(sumNumbersEvenOrOdd, isEvenOrOdd) {
